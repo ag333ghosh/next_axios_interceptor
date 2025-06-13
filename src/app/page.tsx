@@ -3,9 +3,9 @@
 import QuoteCard from "@/Components/QuoteCard";
 import LoadingSpinner from "@/Components/LoadingSpinner";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "./Redux/store";
+import { AppDispatch, RootState } from "@/Redux/store";
 import { useEffect } from "react";
-import { getAllPosts } from "./Redux/post.slice";
+import { getAllPosts } from "@/Redux/post.slice";
 
 export default function Home() {
   const { allPosts, status } = useSelector((state: RootState) => state.postSlice);
